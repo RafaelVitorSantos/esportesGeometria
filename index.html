@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <nav>
+        <h3 id="logo" onclick="window.location.href='index.html'">Little Condor</h3>
+        <div class="nav-right mobile-delete" >
+            <button onclick="backgroundChange()" id="changeBackground">🔲</button>
+            <select id="esportes-select">
+                <option value="fut">Futebol</option>
+                <option value="vol">Vôlei</option>
+                <option value="ten">Tênis de Mesa</option>
+                <option value="ska">Skate</option>
+            </select>
+            <button id="buscar" onclick="buscar()">🔎</button>
+        </div>
+    </nav>
+    <h1 class="title">GEOMETRIA NOS ESPORTES</h1>
+    <header>
+        <div id="fut" onclick="window.location.href='futebol/futebol.html'">
+            <h3>futebol</h3>
+        </div>
+        <div id="vol" onclick="window.location.href='volei/volei.html'">
+            <h3>vôlei</h3>
+        </div>
+        <div id="ten" onclick="window.location.href='tenis/tenis.html'">
+            <h3>tênis de mesa</h3>
+        </div>
+        <div id="ska" onclick="window.location.href='skate/skate.html'">
+            <h3>skate</h3>
+        </div>
+    </header>
+
+    <div id="frm-content">
+        <h2>Sabe sobre Geometria?</h2>
+        <h2>Bora descobrir?</h2>
+        <h1>🧐Questionario de Geometria Básica🧐</h1>
+
+        <form>
+            <div class="quest">
+                <p>1- o que é Área?</p> 
+                <br>
+                <input type="radio" name="questao01" value="certo" id="certo01"> <label id="certo1" for="certo01"> A área é uma grandeza igual à
+                    medida da superfície de
+                    uma figura plana.</label>
+                <br>
+                <input type="radio" name="questao01" id="errado01">
+                <label for="errado01"> Área é sempre igual à soma de todos os lados da figura plana, então, em algumas
+                    figuras planas, é
+                    possível utilizar uma fórmula nesse sentido.</label>
+                <br>
+                <input type="radio" name="questao01" id="errado02"><label for="errado02"> Área é o comprimento do
+                    contorno da figura, e o seu
+                    valor é encontrado
+                    quando calculamos a soma de todos os lados da figura.</label>
+            </div>
+
+            <div class="quest">
+                <p>2- o que é Perimetro?</p>
+                <br>
+                <input type="radio" name="questao02" id="errado03"><label for="errado03"> Perimetro é uma grandeza igual
+                    à medida da superfície
+                    de uma figura plana.</label>
+                <br>
+                <input type="radio" name="questao02" id="errado04"><label for="errado04"> Perimetro é uma grandeza da
+                    geometria. Dada uma
+                    figura geométrica, o Perimetro é a medida de superfície dessa figura.</label>
+                <br>
+                <input type="radio" name="questao02" value="certo" id="certo02"> <label id="certo2" for="certo02"> Perimetro é o comprimento do
+                    contorno da figura, e o
+                    seu valor é encontrado
+                    quando calculamos a soma de todos os lados da figura.</label>
+            </div>
+
+            <div class="quest">
+                <p>3- Vemos geometria como linhas, semiretas, ãngulos, retas e etc nos programas que utilizamos
+                    na aula de Desenho Cad?</p>
+                <br>
+                <input type="radio" name="questao03" value="certo" id="certo03"> <label id="certo3" for="certo03"> Sim</label>
+                <br>
+                <input type="radio" name="questao03" id="errado05"> <label for="errado05"> Não</label>
+                <p id="resultado-form"></p>
+                <div id="flex-button">
+                    <button type="button" onclick="form_resultado(questao01, questao02, questao03)">Envie</button> <button type="reset">Apagar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

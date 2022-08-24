@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skate Geometria</title>
+    <link rel="stylesheet" href="skate.css">
+    <script src="skate.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+<body>
+    <span class="material-symbols-outlined arrow_up" onclick="topReturn()">
+        arrow_upward
+    </span>
+    <span class="material-symbols-outlined" id="starMenu" onclick="starMenu()">
+        star
+    </span>
+    <div id="star-rating">
+        <h3>Nos avalie!</h3>
+        <div>
+            <span class="material-symbols-outlined" id="star1" onclick="star1()">
+                star
+            </span>
+            <span class="material-symbols-outlined" id="star2" onclick="star2()">
+                star
+            </span>
+            <span class="material-symbols-outlined" id="star3" onclick="star3()">
+                star
+            </span>
+            <span class="material-symbols-outlined" id="star4" onclick="star4()">
+                star
+            </span>
+            <span class="material-symbols-outlined" id="star5" onclick="star5()">
+                star
+            </span>
+        </div>
+    </div>
+    <nav>
+        <h3 onclick="home()">Little Condor</h3>
+    </nav>
+    <header>
+        <div id="content-header">
+            <h1>GEOMETRIA NA PISTA</h1>
+            <p>
+                O skate vem aumentando sua popularidade no nosso país, se tornando popular
+                principalmente nas cidades grandes, com isso uma grande forma de estudar e entender de forma
+                mais clara alguns assuntos sobre geometria podemos assim usar esse incrivel esporte
+                para aprender muitos dos estudos envolvendo a matéria de geometria.
+            </p>
+            <center><a href="#veja-mais-tp" class="ver_mais_link">veja mais</a>🧐</center>
+        </div>
+        <div id="img01-header">
+        </div>
+
+    </header>
+    <div id="veja-mais-tp"></div>
+    <div id="content">
+        <h1> ⚽️ ONDE ENCONTRAMOS GEOMETRIA NA PISTA?</h1>
+        <div id="container-content">
+            <div class="card">
+                <img src="img/jack-irwin-djIR42oN7Js-unsplash.jpg" loading="lazy" class="card-image">
+                <br><br>
+                <h3>Perimetro da pista</h3>
+                <p>
+                    Na pista de skate vemos o seu contorno no qual pode ser calculado baseando-se na medida do
+                    perímetro.
+                    <br>
+                    "<span class="calc">Perímetro = 2 x ( comprimento + largura )</span>"
+                </p>
+            </div>
+            <div class="card">
+                <img src="img/lukas-bato-Vbbn4xNBfnM-unsplash.jpg" loading="lazy" class="card-image">
+                <br><br>
+                <h3>Área da pista</h3>
+                <p>
+                    Além do perimetro conseguimos calcular toda a dimensão da pista, portanto vamos calcular a área
+                    <br>
+                    "<span class="calc">Área = Base x Altura</span>"
+                </p>
+            </div>
+            <div class="card">
+                <img src="img/matteo-paganelli-FhHGPO3aMsU-unsplash.jpg" loading="lazy" class="card-image">
+                <br><br>
+                <h3>Comprimento da rampa</h3>
+                <p>
+                    Para calcular o comprimento da circunferencia da rampa utilizaremos a seguinte formula
+                    <br>
+                    "<span class="calc">Circunferencia = 2&#960; x &#932 </span>"
+                </p>
+            </div>
+            <div class="card" id="card-none1">
+                <img src="img/shawn-henry-eK_aInAXydw-unsplash.jpg" loading="lazy" class="card-image">
+                <br><br>
+                <h3>Angulos com as manobras</h3>
+                <p>
+                    Com o skate o desejo por fazer manobras é muito grande, com essas práticas conseguimos
+                    inserir os angulos
+                    <br>
+                    "<span class="calc">tipos: Agudo, Reto, Obtuso e Raso</span>"
+                </p>
+            </div>
+            <div class="card" id="card-none2">
+                <img src="img/skatista-90-graus.png" loading="lazy" class="card-image">
+                <br><br>
+                <h3>Triângulo Retangulo nas manobras</h3>
+                <p>
+                    Além dos angulos conseguimos ver em algumas manobras os triangulos retangulos, podemos
+                    calcular sua área
+                    <br>
+                    "<span class="calc">Área = Base x Altura / 2</span>"
+                </p>
+            </div>
+            <div class="card" id="card-none3">
+                <img src="img/skate-rayssa-leal-site-1024x683.webp" loading="lazy" class="card-image">
+                <br><br>
+                <h3>Perímetro do triangulo retangulo</h3>
+                <p>
+                    Com triangulo Retangulo calculamos a área, mas podemos calcular seu perimetro tambem, da
+                    seguinte forma
+                    <br>
+                    "<span class="calc">Perímetro = lado A + lado B + lado C</span>"
+                </p>
+            </div>
+            <br>
+            <center>
+                <button class="veja_mais show_phone" onclick="aumentarDiminuir()" id="btnAbrirFechar">veja mais</button>
+            </center>
+            <br>
+        </div>
+    </div>
+    <div id="transition01">
+        <div>
+            <h3>QUANTIDADE DE SKATISTAS NO BRASIL</h3>
+            <br><br>
+            <center><span class="percent">8,5M</span></center>
+        </div>
+        <div>
+            <h3>MULHERES NO SKATE VEM AUMENTANDO</h3>
+            <br><br>
+            <center><span class="percent">19%</span></center>
+        </div>
+    </div>
+    <div id="importance-container-futebol">
+        <h1> A IMPORTANCIA DO SKATE NA ESCOLA </h1>
+        <div id="importance-content-futebol">
+            <p>
+                Com o skate na escola, também trabalhar regra de conduta,
+                comportamento, respeito, fortalecimento muscular, o equilíbrio, lidar com falhas
+                e frustrações além de proporcionar esse desafio para os estudantes.
+                Através desse, os professores podem melhorar a auto-estima dos alunos,
+                a concentração, persistencia, as destrezas corporais e mentais.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <h1 class="title" onclick="home()">Little Condor</h1>
+        <div class="left">
+            <h3>rede sociais 👨‍💻</h3><br class="show_phone">
+            <a href="https://www.instagram.com/raff.vitor/" target="_blank">instagram</a><br>
+            <a href="https://www.cloudskillsboost.google/public_profiles/795d1c18-a093-453d-8b03-e89cb2c73392" target="_blank">
+                Cloud Skill Boost</a><br>
+            <a href="https://www.linkedin.com/in/rafaelvitorsantos/" target="_blank">linkedIn</a><br>
+            <a href="https://github.com/RafaelVitorSantos" target="_blank">github</a>
+        </div>
+        <div class="left">
+            <h3>páginas 📰</h3><br class="show_phone">
+            <a href="../index.html" target="_blank">home</a><br>
+            <a href="../futebol/futebol.html" target="_blank">futebol</a><br>
+            <a href="../volei/volei.html" target="_blank">vôlei</a><br>
+            <a href="../tenis/tenis.html" target="_blank">tênis de mesa</a><br>
+            <a href="">skate</a>
+        </div>
+        <div class="left">
+            <h3>Entre em Contato 📞</h3><br class="show_phone">
+            <a href="https://api.whatsapp.com/send/?phone=5519991497692&text&type=phone_number&app_absent=0" target="_blank">
+                (19)99149-7692 </a><br>
+        </div>
+    </footer>
+</body>
+
+</html>

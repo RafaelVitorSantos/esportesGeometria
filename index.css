@@ -1,0 +1,253 @@
+@font-face {
+    font-family: UniSans;
+    src: url('path/filename.eot');
+    src: url('path/filename.eot?#iefix') format('embedded-opentype'),
+        url('path/filename.woff2') format('woff2'),
+        url('path/filename.woff') format('woff'),
+        url('path/filename.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.title {
+    padding-top: 15vh;
+}
+
+#frm-content {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+#frm-content h2 {
+    margin: 1.5vh;
+    color: #999;
+}
+
+#frm-content h1 {
+    margin-bottom: 5vh;
+}
+
+header div {
+    background-blend-mode: darken;
+    color: #fff;
+    text-align: center;
+    height: 35vh;
+    line-height: 35vh;
+    font-size: 2vw;
+    font-family: UniSans;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+header div:hover {
+    transition: 0.5s;
+    transform: scale(1.06);
+}
+
+#fut {
+    background: rgba(0, 0, 0, 0.6) url(futebol/img/connor-coyne-OgqWLzWRSaI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#fut:hover {
+    background: url(futebol/img/connor-coyne-OgqWLzWRSaI-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+#vol {
+    background: rgba(0, 0, 0, 0.6) url(futebol/img/jack-monach-5gcM189YA7o-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#vol:hover {
+    background: url(futebol/img/jack-monach-5gcM189YA7o-unsplash.jpg);
+}
+
+#ten {
+    background: rgba(0, 0, 0, 0.6) url(futebol/img/jack-monach-5gcM189YA7o-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#ten:hover {
+    background: url(futebol/img/jack-monach-5gcM189YA7o-unsplash.jpg);
+}
+
+#ska {
+    background: rgba(0, 0, 0, 0.6) url(skate/img/shawn-henry-eK_aInAXydw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#ska:hover {
+    background: url(skate/img/shawn-henry-eK_aInAXydw-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+:root {
+    --wild-blue-yonder: #8ea4d2ff;
+    --glaucous: #6279b8ff;
+    --english-violet: #44355bff;
+    --dark-purple: #31263eff;
+    --raisin-black: #221e22ff;
+    --marigold: #eca72cff;
+    --flame: #ee5622ff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #d0d0d0;
+    background-image: radial-gradient(#fff 0.9px, #eee 0.9px);
+    background-size: 18px 18px;
+    color: #111;
+    Font-family: Tahoma, Verdana, Segoe, sans-serif;
+    letter-spacing: 0.12vw;
+}
+
+button,
+select {
+    padding: 1vh;
+    border: 1.5px solid #aaa;
+    border-radius: 100px;
+    background-color: #eee;
+}
+
+#flex-button {
+    margin-top: 2.5vh;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #bbb;
+}
+
+.nav-right {
+    position: absolute;
+    right: 5vw;
+    top: 5vh;
+}
+
+h3 {
+    font-size: 23px;
+    cursor: default;
+}
+
+h3:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    padding-left: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 95vw;
+    background-color: #eee;
+    z-index: 777;
+}
+
+#resultado-form {
+    text-align: center;
+    color: blue;
+    font-family: monospace;
+    font-size: 23px;
+}
+
+#flex-button button {
+    margin: 1vw;
+    width: 20vw;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+}
+
+#flex-button button:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+#changeBackground {
+    background-color: #fff;
+}
+
+
+form {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+}
+
+.quest {
+    margin: 2vw;
+}
+
+h2 {
+    text-align: center;
+}
+
+@keyframes mostrar {
+    0% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .title{
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    #resultado-form{
+        font-size: 18px;
+    }
+
+    .mobile-delete{
+        display: none;
+    }
+
+    #logo{
+        text-align: center;
+        font-size: 23px;
+        width: 100%;
+    }
+}
