@@ -36,21 +36,25 @@ async function form_resultado(questao01, questao02, questao03) {
     if(cont == 3){
         document.querySelector('#resultado-form').style.animation = 'mostrar 0.5s'
         document.querySelector('#resultado-form').innerHTML = "🤯Parabens Acertou Todas🥳"
+        cont=0
         await delay(0.5)
         document.querySelector('#resultado-form').style.animation = ''
     } else if(cont == 2){
         document.querySelector('#resultado-form').style.animation = 'mostrar 0.5s'
         document.querySelector('#resultado-form').innerHTML = "😉Parabens Acertou 2🥳"
+        cont=0
         await delay(0.5)
         document.querySelector('#resultado-form').style.animation = ''
     } else if(cont == 1){
         document.querySelector('#resultado-form').style.animation = 'mostrar 0.5s'
         document.querySelector('#resultado-form').innerHTML = "🤨Parabens Acertou Uma🥳"
+        cont=0
         await delay(0.5)
         document.querySelector('#resultado-form').style.animation = ''
     } else {
         document.querySelector('#resultado-form').style.animation = 'mostrar 0.5s'
         document.querySelector('#resultado-form').innerHTML = "😟Não Acertou Nenhuma Tente Novamente😬"
+        cont=0
         await delay(0.5)
         document.querySelector('#resultado-form').style.animation = ''
     }
@@ -118,4 +122,18 @@ function delay(n) {
     return new Promise(function (resolve) {
         setTimeout(resolve, n * 1000);
     });
+}
+
+function apagar(){
+    if (document.getElementById('changeBackground').textContent == "🔲"){
+        document.getElementById('certo1').style.color = "#111"
+        document.querySelector("#certo2").style.color = "#111"
+        document.querySelector("#certo3").style.color = "#111"
+        document.querySelector('#resultado-form').innerHTML = ""
+    } else{
+        document.querySelector("#certo1").style.color = "#eee"
+        document.querySelector("#certo2").style.color = "#eee"
+        document.querySelector("#certo3").style.color = "#eee"
+        document.querySelector('#resultado-form').innerHTML = ""
+    }
 }

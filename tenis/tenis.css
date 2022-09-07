@@ -48,7 +48,7 @@ nav {
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background: rgba(0, 0, 0, 0.5) url(img/tom-morbey-QJz32ZuCArg-unsplash.jpg);
+    background: rgba(0, 0, 0, 0.5) url(img/melanie-lim-yLfHp27Clcg-unsplash.jpg);
     background-blend-mode: darken;
     background-position: center;
     background-attachment: fixed;
@@ -81,7 +81,7 @@ footer a:hover {
     margin-left: 1vw;
 }
 
-.title:hover {
+.title:hover{
     transition: 0.2s;
     color: #fff;
 }
@@ -123,8 +123,9 @@ header {
     position: absolute;
     right: 0;
     top: 0;
-    background: url(img/oleg-ivanov-F5zmI-htuUQ-unsplash.jpg);
+    background: url(img/dennis-cortes-RezSc80WIVc-unsplash.jpg) rgba(0, 0, 0, 0.05);
     background-size: cover;
+    background-blend-mode: darken;
     width: 50vw;
     height: 100vh;
     z-index: -1;
@@ -188,17 +189,6 @@ h1 {
 
 b {
     font-family: 'Times New Roman', Times, serif;
-}
-
-.veja_mais {
-    font-size: 1.4vw;
-    color: #eee;
-    background: var(--glaucous);
-    width: 100%;
-    padding: 1vw;
-    border-radius: 1vw;
-    opacity: 90%;
-    cursor: pointer;
 }
 
 #veja-mais-tp {
@@ -326,7 +316,7 @@ h3 {
     grid-template-columns: 1fr 1fr;
     padding-top: 15vh;
     padding-bottom: 15vh;
-    background: rgba(0, 0, 0, 0.65) url(img/tom-morbey-QJz32ZuCArg-unsplash.jpg);
+    background: rgba(0, 0, 0, 0.65) url(img/melanie-lim-yLfHp27Clcg-unsplash.jpg);
     background-blend-mode: darken;
     background-position: center;
     background-size: cover;
@@ -339,12 +329,6 @@ h3 {
 #transition01 h3 {
     letter-spacing: 0.3vw;
     Font-family: Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-#card-none1,
-#card-none2,
-#card-none3 {
-    display: none;
 }
 
 #star1,
@@ -365,7 +349,7 @@ h3 {
     color: #ff0;
 }
 
-.material-symbols-outlined {
+.material-symbols-outlined{
     fill: #eee;
 }
 
@@ -417,19 +401,8 @@ h3 {
 }
 
 @media (max-width: 1000px) {
-    .card h3 {
+    .card h3{
         font-size: 15px;
-    }
-
-    .show_phone {
-        display: none;
-    }
-
-    #card-none1,
-    #card-none2,
-    #card-none3 {
-        display: block;
-        width: 100%;
     }
 
     #content-header p,

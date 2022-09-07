@@ -72,25 +72,31 @@ header div:hover {
 }
 
 #vol {
-    background: rgba(0, 0, 0, 0.6) url(futebol/img/jack-monach-5gcM189YA7o-unsplash.jpg);
+    background: rgba(0, 0, 0, 0.6) url(volei/img/erik-mclean\ -\ PkEytgjLm0-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #vol:hover {
-    background: url(futebol/img/jack-monach-5gcM189YA7o-unsplash.jpg);
+    background: url(volei/img/erik-mclean\ -\ PkEytgjLm0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 
 #ten {
-    background: rgba(0, 0, 0, 0.6) url(futebol/img/jack-monach-5gcM189YA7o-unsplash.jpg);
+    background: rgba(0, 0, 0, 0.6) url(tenis/img/ilya-pavlov-dybZ3jXtYUo-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #ten:hover {
-    background: url(futebol/img/jack-monach-5gcM189YA7o-unsplash.jpg);
+    background: url(tenis/img/ilya-pavlov-dybZ3jXtYUo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 
 #ska {
